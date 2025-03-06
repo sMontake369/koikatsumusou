@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 742aa3445cff2e2489af2afd1d1c14bd, type: 3}
+  m_Name: TalkInformationData 0
+  m_EditorClassIdentifier: 
+  id: 0
+  joinFriendIdList: 01000000
+  talkName: "\u3057\u304A\u3093"
+  description: 
+  icon: {fileID: 2800000, guid: 2596908743ea63447ae4c6b156cb0396, type: 3}
+  messageDataList:
+  - {fileID: 11400000, guid: f716cd06e74416643a770dcaf2901cc0, type: 2}
+  - {fileID: 11400000, guid: 715148f586794804488a77e0b708ab79, type: 2}
+  - {fileID: 11400000, guid: 6a4aa1d2576276d429433870eff21403, type: 2}
+  - {fileID: 11400000, guid: da0779895f0951e46b7aad41d5ef967c, type: 2}
+  - {fileID: 11400000, guid: c33be87961ab9af4f9814f3c5a2cbafd, type: 2}
+  - {fileID: 11400000, guid: bb860980a74e78e4aabb29c42c2b142d, type: 2}
+  questionData: {fileID: 0}
+  replyDataList:
+  - {fileID: 11400000, guid: fdbec8e2d8a48ac4997c5cc97aa1c563, type: 2}
+  - {fileID: 11400000, guid: eb4eff5273f204046b12eb274922c25c, type: 2}
+  - {fileID: 11400000, guid: 5fa5cc74c37525e49b1040f920b24bec, type: 2}
+  - {fileID: 11400000, guid: d0c244828e8cf894ba6480a0e0183712, type: 2}
+  defaultQuestionReply:
+  - {fileID: 11400000, guid: 41b279eeee2846a4ea27780e8e43d116, type: 2}
+  defaultReply:
+  - {fileID: 11400000, guid: d0d4a3d3031c7f846b256a0fc44f39de, type: 2}
+  eventDataList:
+  - {fileID: 11400000, guid: 42be846d960c9c34ab0bc1b953922ff7, type: 2}
+  - {fileID: 11400000, guid: 22ecb126c48842b40b4fe64745d33040, type: 2}
+  - {fileID: 11400000, guid: f1203b708d8698d4ea92be29e3fd6d06, type: 2}
+  - {fileID: 11400000, guid: 5fee0d8d2ef761941b0214bfe27f804b, type: 2}
+  - {fileID: 11400000, guid: cfd6afd405f94304e9263341ec120007, type: 2}

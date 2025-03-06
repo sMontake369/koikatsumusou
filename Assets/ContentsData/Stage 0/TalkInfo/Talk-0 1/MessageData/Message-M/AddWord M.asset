@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff0bacd2cfc6ca944b80194fc068fe95, type: 3}
+  m_Name: AddWord M
+  m_EditorClassIdentifier: 
+  wordData: {fileID: 11400000, guid: 67e0b2ea875d297408379379fdc5dad5, type: 2}

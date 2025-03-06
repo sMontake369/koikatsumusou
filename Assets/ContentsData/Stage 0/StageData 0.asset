@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 345e18ee76d6d8a438a8d1723500cba9, type: 3}
+  m_Name: StageData 0
+  m_EditorClassIdentifier: 
+  stageName: "\u4F1A\u8A71\u30C7\u30C3\u30AD\u3067\u604B\u6D3B\u7121\u53CC"
+  deckDataList:
+  - {fileID: 11400000, guid: fe946309a353ec144a5055bdcd872f6a, type: 2}
+  - {fileID: 11400000, guid: 2880afd165f8b164287ab77f7ae96af4, type: 2}
+  - {fileID: 11400000, guid: 5037504faafa9bd429adbe4c0e1f89f2, type: 2}
+  - {fileID: 11400000, guid: 1a8a323acd1534246aa8dc42e2b4dd59, type: 2}
+  - {fileID: 11400000, guid: bb30bfb628b2fbb4fa98f61b93e7001e, type: 2}
+  - {fileID: 11400000, guid: 6f0d8eaba5ee825469765d219b8f77b8, type: 2}
+  stageImage: {fileID: 2800000, guid: a33f86ac8895e484092055c704ffbd12, type: 3}
+  applicationDataList:
+  - {fileID: 11400000, guid: 4a7fafe047b64f04e98e6ec301f79257, type: 2}
+  maxStep: 300

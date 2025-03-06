@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6fbaeb4f3d5f774bbb893779cfe1f89, type: 3}
+  m_Name: SwiperData
+  m_EditorClassIdentifier: 
+  slideList:
+  - {fileID: 9197481963319205126, guid: 3bb6194f6abe3fa4f8a923f6d66ad9aa, type: 3}
+  - {fileID: 9197481963319205126, guid: 625b118cf70e41e43b9c71a03fa9944a, type: 3}
+  - {fileID: 9197481963319205126, guid: d846c51a35c2c6a44bb5910f086fbe7f, type: 3}
+  - {fileID: 9197481963319205126, guid: 9806b2bd963522f4fb9ded932f7c2262, type: 3}
+  - {fileID: 9197481963319205126, guid: 441d13f905de8c141878f0056e25cf1a, type: 3}

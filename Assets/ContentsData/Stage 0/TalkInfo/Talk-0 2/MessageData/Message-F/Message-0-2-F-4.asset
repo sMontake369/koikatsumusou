@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c91466c3bd31f884cb4d8b90adb45abb, type: 3}
+  m_Name: Message-0-2-F-4
+  m_EditorClassIdentifier: 
+  friendId: 3
+  talkId: 2
+  sendTime: 
+  message: "\u300EA Mango Earth\u300F\u3063\u3066\u30B2\u30FC\u30E0"
+  eventDataList:
+  - {fileID: 11400000, guid: e8ff9c6113cce9648922a55aef3a7880, type: 2}
+  isUsed: 0
+  deckData: {fileID: 0}

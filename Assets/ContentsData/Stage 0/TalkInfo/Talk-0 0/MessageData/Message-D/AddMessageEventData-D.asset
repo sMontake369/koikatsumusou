@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ef26dcf703653d48aa26add92172b63, type: 3}
+  m_Name: AddMessageEventData-D
+  m_EditorClassIdentifier: 
+  messageDataList:
+  - {fileID: 11400000, guid: 9f9e09f57623eb5438cadfd2a91600d0, type: 2}
+  - {fileID: 11400000, guid: b61d1e9fce299a746971267dacb1ba0b, type: 2}
+  - {fileID: 11400000, guid: 92f89fe375f5a82439890b3a1c710031, type: 2}
+  - {fileID: 11400000, guid: 65214e867721023468077ceedc08ee61, type: 2}
+  - {fileID: 11400000, guid: fd03b774eab563c41a2f1924790236e0, type: 2}
+  - {fileID: 11400000, guid: cfd1ea92791dc164da7f4632aad1c252, type: 2}
+  - {fileID: 11400000, guid: 30279e5b224eed14bbb57c5e179d5bea, type: 2}

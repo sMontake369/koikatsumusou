@@ -1,0 +1,15 @@
+.custom-label {
+    font-size: 20px;
+    -unity-font-style: bold;
+    color: rgb(68, 138, 255);
+}
+
+.list:hover {
+    background-color: rgb(225, 226, 229);
+    transition-duration: 0.1s;
+}
+
+.list {
+    background-color: rgb(245, 246, 250);
+    transition-duration: 0.1s;
+}

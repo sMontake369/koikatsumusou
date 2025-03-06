@@ -1,0 +1,20 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Window_Word/wordDeck.uss?fileID=7433441132597879392&amp;guid=27ac93b53201bb846bb6338dfd6473d4&amp;type=3#wordDeck" />
+    <engine:VisualElement name="WordDeck" style="flex-grow: 0; margin-top: 1.5%; margin-right: 1.5%; margin-bottom: 1.5%; margin-left: 1.5%; border-top-left-radius: 25px; border-top-right-radius: 25px; border-bottom-right-radius: 25px; border-bottom-left-radius: 25px; -unity-font-definition: url(&quot;project://database/Assets/TextMesh%20Pro/Fonts/NotoSansJP-Regular.ttf?fileID=12800000&amp;guid=0be0c5a98e0878b4589196df7ed19bab&amp;type=3#NotoSansJP-Regular&quot;); background-image: url(&quot;project://database/Assets/Mini%20UI/9%20Splice%20Panels/Light%20Theme%20Square%20Panels/Light%20Theme%20Square%20LIGHT%20GREY.png?fileID=21300000&amp;guid=1eac414d8b7592246a4d9245146aab25&amp;type=3#Light Theme Square LIGHT GREY&quot;); -unity-slice-left: 152; -unity-slice-top: 127; -unity-slice-right: 149; -unity-slice-bottom: 180; -unity-background-scale-mode: stretch-to-fill; -unity-slice-scale: 0.2px; height: 75%; width: 13%; right: 0; left: 84%;">
+        <LabelAutoFit name="WordLabel" text="ワード" char-num-per-line="6" char-num="5" ratio="0.6" style="margin-top: 0; margin-right: 10%; margin-bottom: 0; margin-left: 10%; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; -unity-font-style: bold; -unity-text-align: upper-center; background-image: url(&quot;project://database/Assets/Mini%20UI/Tittle%20Bars/Other%20Styles/Title%20Bar%20Long/CYAN.png?fileID=2800000&amp;guid=b7b86be100391614aad587763b253d62&amp;type=3#CYAN&quot;); height: 10%;" />
+        <engine:VisualElement name="WordWrapper" style="flex-grow: 1; margin-right: 5%; margin-left: 5%; margin-top: 5%; margin-bottom: 5%; background-image: none; -unity-background-scale-mode: scale-to-fit; -unity-slice-top: 64; justify-content: center;">
+            <ContentRatioFit name="Word0" class="wordDeck" style="border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; border-bottom-left-radius: 20px;">
+                <engine:VisualElement name="Icon" class="word-icon" style="flex-grow: 0; background-image: none; -unity-background-scale-mode: scale-to-fit; height: 75%;" />
+                <LabelAutoFit name="Name" char-num-per-line="8" char-num="8" use-ratio="false" ratio="1" class="word-label" />
+            </ContentRatioFit>
+            <ContentRatioFit name="Word1" class="wordDeck" style="border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; border-bottom-left-radius: 20px;">
+                <engine:VisualElement name="Icon" class="word-icon" style="flex-grow: 0; background-image: none; -unity-background-scale-mode: scale-to-fit; height: 75%;" />
+                <LabelAutoFit name="Name" char-num-per-line="8" char-num="8" use-ratio="false" class="word-label" />
+            </ContentRatioFit>
+            <ContentRatioFit name="Word2" class="wordDeck" style="border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; border-bottom-left-radius: 20px;">
+                <engine:VisualElement name="Icon" class="word-icon" style="flex-grow: 0; background-image: none; -unity-background-scale-mode: scale-to-fit; height: 75%;" />
+                <LabelAutoFit name="Name" char-num-per-line="8" char-num="8" use-ratio="false" class="word-label" />
+            </ContentRatioFit>
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

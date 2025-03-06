@@ -1,0 +1,57 @@
+.custom-label {
+    font-size: 20px;
+    -unity-font-style: bold;
+    color: rgb(68, 138, 255);
+}
+
+.infomation-label {
+    flex-direction: row;
+    -unity-text-align: middle-center;
+    -unity-font-style: bold;
+    -unity-font-definition: url("project://database/Assets/TextMesh%20Pro/Fonts/NotoSansJP-Regular.ttf?fileID=12800000&guid=0be0c5a98e0878b4589196df7ed19bab&type=3#NotoSansJP-Regular");
+    flex-grow: 1;
+    height: 33%;
+    margin-top: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+}
+
+.text-label {
+    width: 15%;
+    color: rgb(47, 54, 64);
+    -unity-text-align: middle-right;
+}
+
+.title-label {
+    width: 85%;
+    color: rgb(47, 54, 64);
+    -unity-text-align: middle-left;
+}
+
+.custom-button:hover {
+    scale: 1 0.9;
+    transition-timing-function: linear;
+    transition-duration: 0.1s;
+    transform-origin: bottom;
+}
+
+.custom-button {
+    scale: 1 1;
+    transition-duration: 0.1s;
+    -unity-text-align: middle-center;
+    background-image: url("project://database/Assets/Mini%20UI/Buttons/Inner%20Border%20Buttons/384Px%20Square%20InnerBorder%20Button/384%20Px%20Square%20InnerBorder%20SKYBLUE.png?fileID=21300000&guid=07ac777ed16d6094e8a8c9ece5a05af8&type=3#384 Px Square InnerBorder SKYBLUE");
+    -unity-slice-left: 74;
+    -unity-slice-top: 64;
+    -unity-slice-right: 74;
+    -unity-slice-bottom: 108;
+    -unity-slice-scale: 0.3px;
+    padding-bottom: 3%;
+    margin-top: 1%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    width: 45%;
+    -unity-font-definition: url("project://database/Assets/TextMesh%20Pro/Fonts/NotoSansJP-Regular.ttf?fileID=12800000&guid=0be0c5a98e0878b4589196df7ed19bab&type=3#NotoSansJP-Regular");
+    color: rgb(47, 54, 64);
+}

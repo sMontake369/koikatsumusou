@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e30a07139b6426448ad892c97411d019, type: 3}
+  m_Name: Question-0-1 0
+  m_EditorClassIdentifier: 
+  requirementDeckId: 6
+  eventDataList:
+  - {fileID: 11400000, guid: 58cae9b3a04cd4748a9be1a560255361, type: 2}
+  - {fileID: 11400000, guid: 021300cccd206ff479f5b4e3f30c9836, type: 2}
+  - {fileID: 11400000, guid: 885ef77f62afc9c448d26b764c2bdab3, type: 2}
+  wordData: {fileID: 11400000, guid: 8ba3da16e03a63e45a545c86255b65c0, type: 2}
+  diffWordEventDataList:
+  - {fileID: 11400000, guid: e1507ad610a1a6840b1db5a1cda1f03f, type: 2}
+  - {fileID: 11400000, guid: abaeaa16890d7df49bfba2ddb7eb3f3d, type: 2}
+  diffAllEventDataList:
+  - {fileID: 11400000, guid: ac4650a03bf398f4da253799722ea18b, type: 2}
+  - {fileID: 11400000, guid: e59caeb26a10b7544b03bd96c3058323, type: 2}

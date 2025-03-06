@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c91466c3bd31f884cb4d8b90adb45abb, type: 3}
+  m_Name: Message-0-3-Y-13
+  m_EditorClassIdentifier: 
+  friendId: 4
+  talkId: 3
+  sendTime: 
+  message: "\u300E10000\u5186\u300F"
+  eventDataList:
+  - {fileID: 11400000, guid: acdfece88e965424fbef9d6c1fb2e874, type: 2}
+  - {fileID: 11400000, guid: fc5ba995bd50c3d419e92b2b35533ccc, type: 2}
+  - {fileID: 11400000, guid: 6134b71f828b2de45818f8ce13c19ec6, type: 2}
+  - {fileID: 11400000, guid: 5a6005a070c5afb47acac5728c81665a, type: 2}
+  isUsed: 0
+  deckData: {fileID: 0}

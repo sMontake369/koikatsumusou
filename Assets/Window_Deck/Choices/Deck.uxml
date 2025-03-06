@@ -1,0 +1,17 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Window_Deck/Choices/Choice.uss?fileID=7433441132597879392&amp;guid=3dddfbe6caf091b4a8dc43d568ddf497&amp;type=3#Choice" />
+    <ContentRatioFit name="Deck" ratio="1.25" fit-height="false" class="deck" style="width: auto; height: auto; background-image: url(&quot;project://database/Assets/Mini%20UI/Buttons/Inner%20Border%20Buttons/384Px%20Square%20InnerBorder%20Button%20Pressed/384%20Px%20Square%20InnerBorder%20Pressed%20PINK.png?fileID=21300000&amp;guid=04e8714ab9c889c43a22481acba7fb56&amp;type=3#384 Px Square InnerBorder Pressed PINK&quot;); margin-top: 2.5%; margin-right: 2.5%; margin-bottom: 2.5%; margin-left: 2.5%; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; -unity-background-scale-mode: scale-and-crop; flex-grow: 1; -unity-font-definition: url(&quot;project://database/Assets/TextMesh%20Pro/Fonts/mitimasu.ttf?fileID=12800000&amp;guid=a5b9e5b5e8f9f624ba42440c804a0816&amp;type=3#mitimasu&quot;); -unity-slice-left: 74; -unity-slice-top: 90; -unity-slice-right: 74; -unity-slice-bottom: 108; -unity-slice-scale: 0.5px;">
+        <engine:VisualElement name="Thumbnail" style="flex-grow: 0; flex-direction: row; margin-top: 15%; margin-right: 10%; margin-bottom: 5%; margin-left: 10%; height: 25%; color: rgb(245, 246, 250); background-image: url(&quot;project://database/Assets/Mini%20UI/Buttons/Plain%20Buttons/384Px%20Square%20Plain%20Button/384%20Px%20Square%20Plain%20WHITE.png?fileID=21300000&amp;guid=94597dc3aca89cf4783791a73d0f6f4b&amp;type=3#384 Px Square Plain WHITE&quot;); -unity-slice-left: 74; -unity-slice-right: 74; -unity-slice-top: 64; -unity-slice-bottom: 108; -unity-slice-scale: 0.3px; padding-bottom: 6%; padding-top: 0; padding-right: 3%; padding-left: 3%;">
+            <LabelAutoFit name="Title" text="デートに誘う" char-num-per-line="12" char-num="8" style="width: 100%; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; -unity-font-style: bold; -unity-text-align: middle-center; color: rgb(47, 54, 64);">
+                <Bindings>
+                    <engine:DataBinding property="text" data-source-path="title" binding-mode="ToTarget" />
+                </Bindings>
+            </LabelAutoFit>
+        </engine:VisualElement>
+        <LabelAutoFit name="Text" text="メッセージメッセージメッセージメッセージメッセージ" char-num-per-line="9" char-num="8" style="margin-top: 5%; margin-right: 10%; margin-bottom: 10%; margin-left: 10%; white-space: normal; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; height: 50%; color: rgb(245, 246, 250); -unity-font-style: bold; flex-grow: 1;">
+            <Bindings>
+                <engine:DataBinding property="text" data-source-path="description" binding-mode="ToTarget" />
+            </Bindings>
+        </LabelAutoFit>
+    </ContentRatioFit>
+</engine:UXML>

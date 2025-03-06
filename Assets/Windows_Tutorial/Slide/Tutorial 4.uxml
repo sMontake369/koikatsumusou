@@ -1,0 +1,3 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:VisualElement style="flex-grow: 1; width: 100%; height: 100%; align-self: center; -unity-background-scale-mode: scale-to-fit; background-image: resource(&apos;チュートリアル画像/スライド4&apos;);" />
+</engine:UXML>

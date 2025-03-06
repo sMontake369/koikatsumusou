@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 43d76558d09ae3e4e9e94a1245f6a2e3
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - messageTree: {fileID: 9197481963319205126, guid: ef36a1a9bf0600d49a1c1c7ba058db71, type: 3}
+  - messageListTree: {fileID: 9197481963319205126, guid: 09f0a1ffd9a78e746aacab5333bb084e, type: 3}
+  - messageHistoryTree: {fileID: 9197481963319205126, guid: 93945c0bc54971d4e8618787a41020fc, type: 3}
+  - messageHistoryListTree: {fileID: 9197481963319205126, guid: ba1a367470dd5664c858a5dd9a49ff55, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

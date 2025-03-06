@@ -1,0 +1,57 @@
+.wordDeck {
+    background-image: url("project://database/Assets/Mini%20UI/Panels/Other%20Panels/Light%20Misc%20Panel/Mission%20Panel%20CYAN.png?fileID=21300000&guid=44e1a7aaee4d081469b93768faca4b7e&type=3#Mission Panel CYAN");
+    -unity-background-scale-mode: scale-to-fit;
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    -unity-slice-left: 152;
+    -unity-slice-top: 130;
+    -unity-slice-right: 152;
+    -unity-slice-bottom: 190;
+    -unity-slice-scale: 0.07px;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-left: 5%;
+    height: auto;
+    padding-bottom: 7%;
+    padding-top: 0;
+    padding-right: 2%;
+    padding-left: 2%;
+    scale: 1 1;
+    transition-duration: 0.1s;
+    transition-timing-function: linear;
+}
+
+.word-label {
+    height: 25%;
+    margin-bottom: 6%;
+    -unity-font-definition: url("project://database/Assets/TextMesh%20Pro/Fonts/NotoSansJP-Regular.ttf?fileID=12800000&guid=0be0c5a98e0878b4589196df7ed19bab&type=3#NotoSansJP-Regular");
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    margin-top: 0;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.word-icon {
+    margin-top: 8%;
+    margin-right: 5%;
+    margin-bottom: 2%;
+    margin-left: 5%;
+    -unity-background-image-tint-color: rgb(38, 38, 38);
+}
+
+.word-button {
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in-out-circ;
+    scale: 1 1;
+}
+
+.word-button:hover {
+    scale: 0.95 0.95;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-out-circ;
+}

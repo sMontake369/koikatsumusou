@@ -1,0 +1,29 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Window_Phone/App_Line/HistroyScene/MessageHistoryScene.uss?fileID=7433441132597879392&amp;guid=3a86580ad2ef7e34484ff0f827318661&amp;type=3#MessageHistoryScene" />
+    <engine:VisualElement name="Header" style="flex-grow: 0; height: 12%; background-color: rgb(255, 229, 247);">
+        <LabelAutoFit text="トーク一覧" char-num-per-line="25" name="Titile" char-num="15" ratio="0.3" style="margin-top: 0; margin-right: 0; margin-bottom: 2%; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; -unity-font-definition: url(&quot;project://database/Assets/TextMesh%20Pro/Fonts/NotoSansJP-Regular.ttf?fileID=12800000&amp;guid=0be0c5a98e0878b4589196df7ed19bab&amp;type=3#NotoSansJP-Regular&quot;); -unity-text-align: lower-center; color: rgb(47, 54, 64); flex-grow: 1; -unity-font-style: bold;" />
+    </engine:VisualElement>
+    <ListAutoFit name="MessageHistory" binding-source-selection-mode="AutoAssign" item-template="project://database/Assets/Window_Phone/App_Line/HistroyScene/MessageHistoryList/HistoryList.uxml?fileID=9197481963319205126&amp;guid=ba1a367470dd5664c858a5dd9a49ff55&amp;type=3#HistoryList" item-num-per-height="6" fixed-item-height="60" style="height: 78%; -unity-font-definition: url(&quot;project://database/Assets/TextMesh%20Pro/Fonts/NotoSansJP-Regular.ttf?fileID=12800000&amp;guid=0be0c5a98e0878b4589196df7ed19bab&amp;type=3#NotoSansJP-Regular&quot;);" />
+    <engine:VisualElement name="Footer" style="flex-grow: 0; height: 10%; flex-direction: row; -unity-font-definition: url(&quot;project://database/Assets/TextMesh%20Pro/Fonts/NotoSansJP-Regular.ttf?fileID=12800000&amp;guid=0be0c5a98e0878b4589196df7ed19bab&amp;type=3#NotoSansJP-Regular&quot;); background-color: rgb(230, 230, 231); border-top-width: 1px; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; border-left-color: rgb(154, 154, 154); border-right-color: rgb(154, 154, 154); border-top-color: rgb(154, 154, 154); border-bottom-color: rgb(154, 154, 154); justify-content: center; padding-right: 2.5%; padding-left: 2.5%;">
+        <engine:VisualElement name="Menu1" class="menu selectable" style="flex-grow: 1;">
+            <engine:VisualElement name="Icon" class="icon" style="flex-grow: 0; height: 70%; background-image: url(&quot;project://database/Assets/Mini%20UI/UI%20Icons/Note%20V3.png?fileID=2800000&amp;guid=47d2050affeeeb645b71995b2c60b60e&amp;type=3#Note V3&quot;); -unity-background-image-tint-color: rgb(0, 0, 0);" />
+            <LabelAutoFit text="音楽" name="Name" char-num-per-line="5" char-num="5" style="height: 30%; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" />
+        </engine:VisualElement>
+        <engine:VisualElement name="Menu2" class="menu" style="flex-grow: 1; bottom: 10%; scale: 1.1 1.1;">
+            <engine:VisualElement name="Icon" class="icon" style="flex-grow: 0; height: 70%; background-image: url(&quot;project://database/Assets/Mini%20UI/UI%20Icons/Chat%20Icon.png?fileID=2800000&amp;guid=7ca238167c10ff147994925ad37a6df7&amp;type=3#Chat Icon&quot;); -unity-background-image-tint-color: rgb(0, 0, 0);" />
+            <LabelAutoFit text="トーク" name="Name" char-num-per-line="5" char-num="5" style="height: 30%; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" />
+        </engine:VisualElement>
+        <engine:VisualElement name="Menu3" class="menu selectable" style="flex-grow: 1; opacity: 1;">
+            <engine:VisualElement name="Icon" class="icon" style="flex-grow: 0; height: 70%; background-image: url(&quot;project://database/Assets/Mini%20UI/UI%20Icons/Info.png?fileID=2800000&amp;guid=8d108e07302bc5044aa5dd609f420c36&amp;type=3#Info&quot;); -unity-background-image-tint-color: rgb(0, 0, 0);" />
+            <LabelAutoFit text="使いかた" name="Name" char-num-per-line="5" char-num="5" style="height: 30%; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" />
+        </engine:VisualElement>
+        <engine:VisualElement name="Menu4" class="menu" style="flex-grow: 1; opacity: 0.5;">
+            <engine:VisualElement name="Icon" class="icon" style="flex-grow: 0; height: 70%; background-image: url(&quot;project://database/Assets/Mini%20UI/UI%20Icons/Friends%20Icon.png?fileID=2800000&amp;guid=6bc36186f4a8e1040834595570767fc2&amp;type=3#Friends Icon&quot;); -unity-background-image-tint-color: rgb(0, 0, 0);" />
+            <LabelAutoFit text="マイページ" name="Name" char-num-per-line="5" char-num="5" style="height: 30%; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" />
+        </engine:VisualElement>
+        <engine:VisualElement name="Menu5" class="menu" style="flex-grow: 1; opacity: 0.5;">
+            <engine:VisualElement name="Icon" class="icon" style="flex-grow: 0; height: 70%; background-image: url(&quot;project://database/Assets/Mini%20UI/UI%20Icons/Gear%202.png?fileID=2800000&amp;guid=0d26f72b79a260148b1f4905c738a95a&amp;type=3#Gear 2&quot;); -unity-background-image-tint-color: rgb(0, 0, 0);" />
+            <LabelAutoFit text="設定" name="Name" char-num-per-line="5" char-num="5" style="height: 30%; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" />
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

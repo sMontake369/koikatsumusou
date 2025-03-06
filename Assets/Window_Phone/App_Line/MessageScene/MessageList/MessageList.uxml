@@ -1,0 +1,19 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Window_Phone/App_Line/MessageScene/MessageList/MessageList.uss?fileID=7433441132597879392&amp;guid=1bfbc94862b23084ba0bf3f1ff3259ca&amp;type=3#MessageList" />
+    <engine:Button name="MessageElement" class="message-label" style="flex-direction: row; flex-shrink: 1; width: 100%; height: 100%; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 2%; padding-right: 2%; padding-bottom: 2%; padding-left: 2%; -unity-font-definition: url(&quot;project://database/Assets/TextMesh%20Pro/Fonts/NotoSansJP-Regular.ttf?fileID=12800000&amp;guid=0be0c5a98e0878b4589196df7ed19bab&amp;type=3#NotoSansJP-Regular&quot;); background-color: rgba(0, 0, 0, 0); border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0); white-space: normal; -unity-text-align: upper-left; overflow: visible;">
+        <ContentRatioFit name="UserIcon" style="width: 10%; height: 70%; margin-right: 2%; -unity-background-scale-mode: scale-to-fit; margin-left: 2%;">
+            <Bindings>
+                <engine:DataBinding property="style.backgroundImage" data-source-path="friend.icon" binding-mode="ToTarget" />
+            </Bindings>
+        </ContentRatioFit>
+        <engine:VisualElement name="Thumbnail" style="flex-grow: 0; width: 70%;">
+            <LabelAutoFit text="こんにちは" char-num-per-line="17" name="UserName" char-num="18" style="background-size: 100% 20%; -unity-font-style: bold; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; flex-direction: row; -unity-text-align: middle-left;">
+                <Bindings>
+                    <engine:DataBinding property="text" data-source-path="friend.userName" binding-mode="ToTarget" />
+                </Bindings>
+            </LabelAutoFit>
+            <MessageElement message="こんにちはこんにちはこんにちは" time="12:40" time-num-per-line="3" message-num-per-line="13" name="MessageInfo" message-b-color="#A5A5A5FF" style="width: 100%; height: auto; overflow: visible; flex-direction: row;" />
+        </engine:VisualElement>
+    </engine:Button>
+    <engine:VisualElement name="MessageElement" class="own-message" style="height: 100%; flex-direction: row; padding-top: 2%; padding-right: 2%; padding-bottom: 2%; padding-left: 2%; -unity-font-definition: url(&quot;project://database/Assets/TextMesh%20Pro/Fonts/NotoSansJP-Regular.ttf?fileID=12800000&amp;guid=0be0c5a98e0878b4589196df7ed19bab&amp;type=3#NotoSansJP-Regular&quot;); width: 100%; flex-grow: 0; display: none;" />
+</engine:UXML>

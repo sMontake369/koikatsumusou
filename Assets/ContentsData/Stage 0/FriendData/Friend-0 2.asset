@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b1b56e422e7b7944bc04836fcdd19bf, type: 3}
+  m_Name: Friend-0 2
+  m_EditorClassIdentifier: 
+  id: 2
+  userName: "\u3053\u3068\u306E "
+  icon: {fileID: 2800000, guid: a1eb1376c2fe1754bbf1cefa45975856, type: 3}
+  successResultMessage: "\u3042\u306A\u305F\u306B\u5408\u308F\u305B\u305F\u308A\u3057\u306A\u3044\u304B\u3089\u3001\u3061\u3083\u3093\u3068\u4ED8\u3044\u3066\u304D\u3066\u3088\u306D\uFF1F "
+  blockResultMessage: "\u8A71\u3057\u304B\u3051\u306A\u3044\u3067 "
+  progressResultMessage: "\u4F1A\u8A71\u3059\u308B\u6C17\u3042\u308B\uFF1F "
+  status: 0
+  intimacyScore: 0

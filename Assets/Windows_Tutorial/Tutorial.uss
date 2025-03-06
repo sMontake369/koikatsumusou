@@ -1,0 +1,17 @@
+.custom-label {
+    font-size: 20px;
+    -unity-font-style: bold;
+    color: rgb(68, 138, 255);
+}
+
+.swiper-button {
+    transition-duration: 0.1s;
+    transition-timing-function: linear;
+    scale: 1 1;
+}
+
+.swiper-button:hover {
+    transition-duration: 0.1s;
+    transition-timing-function: linear;
+    scale: 0.9 0.9;
+}

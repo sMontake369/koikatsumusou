@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c91466c3bd31f884cb4d8b90adb45abb, type: 3}
+  m_Name: Message-0-0-D-2
+  m_EditorClassIdentifier: 
+  friendId: 1
+  talkId: 0
+  sendTime: 
+  message: "IQ130\u306E\u5929\u624D\u304C\u53EF\u611B\u304F\u306A\u3044\u308F\u3051\u306A\u3044\u3058\u3083\u306A\u3044\uFF01\u3064\u307E\u308A\u3001\u3046\u3061\u304C\u53EF\u611B\u3044\u306E\u306F\u8AD6\u7406\u7684\u5E30\u7D50\u3088\uFF01"
+  eventDataList: []
+  isUsed: 0
+  deckData: {fileID: 0}

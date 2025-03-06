@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 742aa3445cff2e2489af2afd1d1c14bd, type: 3}
+  m_Name: TalkInformationData 2
+  m_EditorClassIdentifier: 
+  id: 2
+  joinFriendIdList: 03000000
+  talkName: "\u3064\u3065\u304D"
+  description: 
+  icon: {fileID: 2800000, guid: c5543e5687017a948b166009d5692d0a, type: 3}
+  messageDataList:
+  - {fileID: 11400000, guid: 0259e04030c6dac42b01f8f31cdc67f1, type: 2}
+  - {fileID: 11400000, guid: fb02b1f535e073545ac890f30b14633e, type: 2}
+  - {fileID: 11400000, guid: 8fe410a511f03a746864290fa383e812, type: 2}
+  - {fileID: 11400000, guid: 66591ebfafc2c5c4ea3ce43376afa279, type: 2}
+  - {fileID: 11400000, guid: 71168a3256247db46aedb18a75babb5b, type: 2}
+  - {fileID: 11400000, guid: aa842918d4c070b4ebe73d5f4c2d0caf, type: 2}
+  - {fileID: 11400000, guid: 0ee30d9049b0e224db1c0193ba275bfd, type: 2}
+  - {fileID: 11400000, guid: bbbdfa300e918584a9ab595833a84387, type: 2}
+  questionData: {fileID: 0}
+  replyDataList:
+  - {fileID: 11400000, guid: 94a4fd428dd0e524dab0febdc488908f, type: 2}
+  - {fileID: 11400000, guid: 3b571141dcefc784f83e30fe94762501, type: 2}
+  - {fileID: 11400000, guid: faecb0a6d74872142ba27168cdba75bc, type: 2}
+  - {fileID: 11400000, guid: ab9eaecb26aee63458bbf7a8be259112, type: 2}
+  defaultQuestionReply:
+  - {fileID: 11400000, guid: 0c79239b76561a642be5fd552fcee94f, type: 2}
+  defaultReply:
+  - {fileID: 11400000, guid: 51cfdf7aeef116f449af97ef6fc23f4c, type: 2}
+  eventDataList:
+  - {fileID: 11400000, guid: 98e2283bbade67a4897756f4f1a05c82, type: 2}
+  - {fileID: 11400000, guid: b9ba51ac061e1fa4eb7472ae59566fa4, type: 2}
+  - {fileID: 11400000, guid: ac9ae8da66430cb4f882dc071a703570, type: 2}
+  - {fileID: 11400000, guid: 74fd30d8ef4394647810b336bfcced89, type: 2}
+  - {fileID: 11400000, guid: 1c8dddc496aebf5418a9dc14fd221725, type: 2}

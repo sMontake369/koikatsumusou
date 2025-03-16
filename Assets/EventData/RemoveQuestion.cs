@@ -7,21 +7,21 @@ public class RemoveQuestion : BaseEventData
 {
     public int talkId;
 
-    public override void init()
+    public override void Init()
     {
         
     }
 
-    public override BaseEventData deepCopy()
+    public override BaseEventData Copy()
     {
         RemoveQuestion copy = CreateInstance<RemoveQuestion>();
         copy.talkId = talkId;
         return copy;
     }
 
-    protected override UniTask doEvent(CancellationToken token)
+    protected override UniTask DoEvent(CancellationToken token)
     {
-        GameManager.smaM.getAppManager<LineManager>().GetTalkManager(talkId).removeQuestion();
+        GameManager.smaM.GetAppManager<LineManager>().GetTalkManager(talkId).removeQuestion();
         return UniTask.CompletedTask;
     }
 }

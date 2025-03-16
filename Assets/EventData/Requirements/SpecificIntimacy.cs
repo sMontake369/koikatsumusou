@@ -12,7 +12,7 @@ public class SpecificIntimacy : BaseRequirementData
     public bool isLessThan;
 
     LineManager linM;
-    public override BaseRequirementData deepCopy()
+    public override BaseRequirementData Copy()
     {
         SpecificIntimacy copy = CreateInstance<SpecificIntimacy>();
         copy.friendId = friendId;
@@ -22,14 +22,14 @@ public class SpecificIntimacy : BaseRequirementData
         return copy;
     }
 
-    public override void init()
+    public override void Init()
     {
-        linM = GameManager.smaM.getAppManager<LineManager>();
+        linM = GameManager.smaM.GetAppManager<LineManager>();
     }
 
-    public override bool isRequirement()
+    public override bool IsRequirement()
     {
-        int nowIntimacy = linM.getFriendIntimacy(friendId);
+        int nowIntimacy = linM.GetFriendIntimacy(friendId);
         if (isLessThan) 
         {
             return nowIntimacy < reqIntimacy;

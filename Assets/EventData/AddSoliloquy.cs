@@ -12,7 +12,7 @@ public class AddSoliloquy : BaseEventData
     public List<string> messageList;
     SoliloquyManager solM;
     CancellationTokenSource cts2;
-    public override BaseEventData deepCopy()
+    public override BaseEventData Copy()
     {
         AddSoliloquy copy = CreateInstance<AddSoliloquy>();
         copy.messageList = new List<string>();
@@ -20,24 +20,24 @@ public class AddSoliloquy : BaseEventData
         return copy;
     }
 
-    public override void init()
+    public override void Init()
     {
         solM = GameManager.solM;
     }
 
-    public override void next()
+    public override void DoNext()
     {
         cts2.Cancel();
     }
 
-    protected override async UniTask doEvent(CancellationToken token)
+    protected override async UniTask DoEvent(CancellationToken token)
     {
         try 
         {
             foreach (string message in messageList) 
             {
                 cts2 = new CancellationTokenSource();
-                await solM.setSoliloquy(message, cts2);
+                await solM.SetSoliloquy(message, cts2);
                 token.ThrowIfCancellationRequested();
             }
         }

@@ -1,0 +1,29 @@
+.custom-label {
+    font-size: 20px;
+    -unity-font-style: bold;
+    color: rgb(68, 138, 255);
+}
+
+.SmartPhone:hover {
+    bottom: 5px;
+    transition-duration: 0.3s;
+    transition-delay: 0s;
+    transition-timing-function: linear;
+}
+
+.SmartPhone {
+    bottom: 0;
+    transition-duration: 0.1s;
+    transition-delay: 1s;
+    transition-timing-function: linear;
+}
+
+.Time {
+    scale: 1 1;
+    transition-duration: 0.1s;
+}
+
+.Time:hover {
+    scale: 0.95 0.95;
+    transition-duration: 0.1s;
+}

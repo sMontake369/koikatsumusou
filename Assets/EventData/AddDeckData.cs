@@ -6,22 +6,22 @@ using UnityEngine;
 public class AddDeckData : BaseEventData
 {
     public ConversationDeckData conversationDeckData;
-    public override void init()
+    public override void Init()
     {
         
     }
 
-    protected override UniTask doEvent(CancellationToken cts)
+    protected override UniTask DoEvent(CancellationToken cts)
     {
-        GameManager.decM.addDeck(conversationDeckData);
-        GameManager.solM.setSoliloquy("会話デッキ「" + conversationDeckData.title + "」を思いついた!").Forget();
+        GameManager.decM.AddDeck(conversationDeckData);
+        GameManager.solM.SetSoliloquy("会話デッキ「" + conversationDeckData.title + "」を思いついた!").Forget();
         return UniTask.CompletedTask;
     }
 
-    public override BaseEventData deepCopy()
+    public override BaseEventData Copy()
     {
         AddDeckData copy = CreateInstance<AddDeckData>();
-        copy.conversationDeckData = conversationDeckData.deepCopy();
+        copy.conversationDeckData = conversationDeckData.Copy();
         // copy.delay = delay;
         return copy;
     }

@@ -10,7 +10,7 @@ public class changeStatus : BaseEventData
 
     LineManager lineM;
 
-    public override BaseEventData deepCopy()
+    public override BaseEventData Copy()
     {
         changeStatus copy = CreateInstance<changeStatus>();
         copy.friendId = friendId;
@@ -18,16 +18,16 @@ public class changeStatus : BaseEventData
         return copy;
     }
 
-    public override void init()
+    public override void Init()
     {
-        lineM = GameManager.smaM.getAppManager<LineManager>();
+        lineM = GameManager.smaM.GetAppManager<LineManager>();
     }
 
-    protected override UniTask doEvent(CancellationToken token)
+    protected override UniTask DoEvent(CancellationToken token)
     {
-        lineM.setFriendStatus(friendId, status);
-        lineM.checkGameEnd();
-        lineM.onChangeFriendStatus(friendId);
+        lineM.SetFriendStatus(friendId, status);
+        lineM.CheckGameEnd();
+        lineM.OnChangeFriendStatus(friendId);
         return UniTask.CompletedTask;
     }
 }

@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
 using Unity.Mathematics;
@@ -31,7 +30,7 @@ public class AudioManager : MonoBehaviour
 
     int audioIndex = 0;
     // Start is called before the first frame update
-    public void init()
+    public void Init()
     {
         if (BGMSource == null) BGMSource = this.AddComponent<AudioSource>();
         else 

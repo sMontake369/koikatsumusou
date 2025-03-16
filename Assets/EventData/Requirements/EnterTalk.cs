@@ -6,21 +6,21 @@ public class EnterTalk : BaseRequirementData
     public int talkId;
     LineManager linM;
 
-    public override BaseRequirementData deepCopy()
+    public override BaseRequirementData Copy()
     {
         EnterTalk copy = CreateInstance<EnterTalk>();
         copy.talkId = talkId;
         return copy;
     }
 
-    public override void init()
+    public override void Init()
     {
-        linM = GameManager.smaM.getAppManager<LineManager>();
+        linM = GameManager.smaM.GetAppManager<LineManager>();
     }
 
-    public override bool isRequirement()
+    public override bool IsRequirement()
     {
-        TalkManager talkManager = linM.getCurrentTalkManager();
+        TalkManager talkManager = linM.GetCurrentTalkManager();
         return talkManager != null && talkManager.talkId == talkId;
     }
 }

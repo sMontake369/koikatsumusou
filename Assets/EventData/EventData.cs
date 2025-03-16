@@ -1,7 +1,5 @@
 using System.Collections.Generic;
 using UnityEngine;
-using System.Threading.Tasks;
-using Cysharp.Threading.Tasks;
 using NaughtyAttributes;
 
 [System.Serializable]
@@ -17,15 +15,15 @@ public class EventData : ScriptableObject
 
     public void init()
     {
-        foreach(BaseEventData eventData in eventDataList) eventData.init();
-        foreach(BaseRequirementData requirementData in requirementDataList) requirementData.init();
+        foreach(BaseEventData eventData in eventDataList) eventData.Init();
+        foreach(BaseRequirementData requirementData in requirementDataList) requirementData.Init();
         isUsed = false;
     }
 
     public bool isRequirements()
     {
         if (isUsed) return false;
-        foreach(BaseRequirementData requirementData in requirementDataList) if(!requirementData.isRequirement()) return false;
+        foreach(BaseRequirementData requirementData in requirementDataList) if(!requirementData.IsRequirement()) return false;
         return true;
     }
 
@@ -35,10 +33,10 @@ public class EventData : ScriptableObject
         copy.id = id;
 
         copy.eventDataList = new List<BaseEventData>();
-        if (eventDataList != null) foreach(BaseEventData eventData in eventDataList) copy.eventDataList.Add(eventData.deepCopy());
+        if (eventDataList != null) foreach(BaseEventData eventData in eventDataList) copy.eventDataList.Add(eventData.Copy());
         
         copy.requirementDataList = new List<BaseRequirementData>();
-        if (requirementDataList != null) foreach(BaseRequirementData requirementData in requirementDataList) copy.requirementDataList.Add(requirementData.deepCopy());
+        if (requirementDataList != null) foreach(BaseRequirementData requirementData in requirementDataList) copy.requirementDataList.Add(requirementData.Copy());
         return copy;
     }
 }

@@ -72,5 +72,6 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
-/[Aa]ssets/Mini UI/*
-/[Aa]ssets/Resources/*
+/[Aa]ssets/Texture/*
+/[Aa]ssets/Sound/BGM/*
+/[Aa]ssets/Sound/SE/*

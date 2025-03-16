@@ -10,14 +10,14 @@ public class SpecificTalk : BaseRequirementData
     [Label("デッキID")]
     public int deckId;
 
-    public override void init()
+    public override void Init()
     {
         
     }
 
-    public override bool isRequirement()
+    public override bool IsRequirement()
     {
-        TalkManager talM = GameManager.smaM.getAppManager<LineManager>().GetTalkManager(talkId);
+        TalkManager talM = GameManager.smaM.GetAppManager<LineManager>().GetTalkManager(talkId);
         foreach (MessageData message in talM.GetMessageDataList())
         {
             if (message.deckData != null && message.deckData.id == deckId) 
@@ -28,7 +28,7 @@ public class SpecificTalk : BaseRequirementData
         return false;
     }
 
-    public override BaseRequirementData deepCopy()
+    public override BaseRequirementData Copy()
     {
         SpecificTalk copy = CreateInstance<SpecificTalk>();
         copy.talkId = talkId;

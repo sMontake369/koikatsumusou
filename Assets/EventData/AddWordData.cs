@@ -6,19 +6,19 @@ using UnityEngine;
 public class AddWordData : BaseEventData
 {
     public WordData wordData;
-    public override void init()
+    public override void Init()
     {
         
     }
 
-    protected override UniTask doEvent(CancellationToken token)
+    protected override UniTask DoEvent(CancellationToken token)
     {
-        GameManager.worM.addWord(wordData);
-        GameManager.solM.setSoliloquy("ワード「" + wordData.word + "」を思いついた!").Forget();
+        GameManager.worM.AddWord(wordData);
+        GameManager.solM.SetSoliloquy("ワード「" + wordData.word + "」を思いついた!").Forget();
         return UniTask.CompletedTask;
     }
 
-    public override BaseEventData deepCopy()
+    public override BaseEventData Copy()
     {
         AddWordData copy = CreateInstance<AddWordData>();
         copy.wordData = wordData.deepCopy();

@@ -5,18 +5,18 @@ using System.Threading;
 [System.Serializable]
 public abstract class BaseEventData : ScriptableObject
 {
-    public abstract void init();
-    protected abstract UniTask doEvent(CancellationToken token);
+    public abstract void Init();
+    protected abstract UniTask DoEvent(CancellationToken token);
 
-    public async UniTask execute(CancellationToken token)
+    public async UniTask Execute(CancellationToken token)
     {
-        await doEvent(token);
+        await DoEvent(token);
     }
 
-    public virtual void next()
+    public virtual void DoNext()
     {
         
     }
 
-    public abstract BaseEventData deepCopy();
+    public abstract BaseEventData Copy();
 }

@@ -1,0 +1,3 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:VisualElement style="flex-grow: 0; background-image: url(&quot;project://database/Assets/Texture/Logo.png?fileID=2800000&amp;guid=666615d86fcd2f64e9f3ebf5709157e9&amp;type=3#Logo&quot;); height: 50%; -unity-background-scale-mode: scale-to-fit; left: 33%; width: 67%; top: 5%;" />
+</engine:UXML>

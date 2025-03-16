@@ -52,90 +52,91 @@ public class GameManager : MonoBehaviour
         tutorialSwiper.OnSwipe += () => audM.PlayNormalSound(NormalSound.clicked);
         tutorialSwiper.Hide();
 
-        init();
+        Init();
     }
 
-    public void init()
+    public void Init()
     {   
         initDate = DateTime.Now;
         step = 0;
-        isGameEnd = false;
+        isGameEnd = true;
 
-        audM.init();
-        smaM.init();
-        decM.init();
-        worM.init();
-        solM.init();
-        resM.init();
+        audM.Init();
+        smaM.Init();
+        decM.Init();
+        worM.Init();
+        solM.Init();
+        resM.Init();
         audM.SetBGM(EBGM.Title);
 
         titleWindow.enabled = true;
     }
 
-    public void startGame(int stageId)
+    public void StartGame(int stageId)
     {
         currentStageId = stageId;
-        StageData stageData = stageDataList[currentStageId].deepCopy();
+        StageData stageData = stageDataList[currentStageId].Copy();
 
-        smaM.startGame(stageData.applicationDataList);
-        decM.startGame(stageData.deckDataList);
-        worM.startGame();
-        solM.startGame();
+        smaM.StartGame(stageData.applicationDataList);
+        decM.StartGame(stageData.deckDataList);
+        worM.StartGame();
+        solM.StartGame();
         audM.SetBGM(EBGM.Game);
         
+        isGameEnd = false;
         titleWindow.enabled = false;
 
         if (isTutorial) 
         {
-            showTutorial();
+            ShowTutorial();
             isTutorial = false;
         }
     }
 
-    public void showTutorial()
+    public void ShowTutorial()
     {
         tutorialSwiper.Show();
     }
 
-    public void addStep()
+    public void AddStep()
     {
-        step++;
         if (!isGameEnd) 
         {
-            smaM.onStep();
-            if (getStepRatio() == 1.0f) finishGame().Forget();
+            step++;
+            smaM.OnStep();
+            if (GetStepRatio() == 1.0f) Finish().Forget();
         }
     }
 
-    public async UniTask finishGame()
+    public async UniTask Finish()
     {
         isGameEnd = true;
         await UniTask.Delay(1000);
         audM.SetBGM(EBGM.Ending);
-        decM.hideWindow();
-        worM.hideWindow();
-        solM.hideWindow();
+        decM.HideWindow();
+        worM.HideWindow();
+        solM.HideWindow();
         await UniTask.Delay(500);
-        await smaM.showResult();
+        await smaM.ShowResult();
 
-        await resM.showResult();
+        await resM.ShowResult();
     }
 
-    public void retryGame()
+    public void Retry()
     {
-        init();
-        startGame(currentStageId);
+        Init();
+        StartGame(currentStageId);
     }
 
-    public void nextGame()
+    public void Next()
     {
-        init();
+        Init();
         currentStageId++;
-        if (currentStageId < stageDataList.Count) { startGame(currentStageId); }
+        if (currentStageId < stageDataList.Count) { StartGame(currentStageId); }
         else 
         { 
             currentStageId--;
-            solM.setSoliloquy("全ステージをクリアした!").Forget(); 
+            solM.SetSoliloquy("全ステージをクリアした!").Forget(); 
         }
     }
 
@@ -150,18 +151,18 @@ public class GameManager : MonoBehaviour
         return GetStageData(currentStageId);
     }
 
-    public int getStep()
+    public int GetStep()
     {
         return step;
     }
 
-    public string getTime()
+    public string GetTime()
     {
         DateTime curDate = initDate + TimeSpan.FromMinutes(step);
         return new string(curDate.Hour + ":" + curDate.Minute.ToString("D2"));
     }
 
-    public float getStepRatio()
+    public float GetStepRatio()
     {
         return math.clamp((float)step / stageDataList[currentStageId].maxStep, 0, 1);
     }

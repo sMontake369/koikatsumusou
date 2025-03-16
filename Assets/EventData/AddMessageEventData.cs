@@ -11,22 +11,22 @@ public class AddMessageEventData : BaseEventData
     public List<MessageData> messageDataList;
     CancellationTokenSource cts2;
 
-    public override void init()
+    public override void Init()
     {
 
     }
 
-    public override void next()
+    public override void DoNext()
     {
         cts2.Cancel();
     }
 
-    protected override async UniTask doEvent(CancellationToken token)
+    protected override async UniTask DoEvent(CancellationToken token)
     {
         foreach (MessageData messageData in messageDataList)
         {
             cts2 = new CancellationTokenSource();
-            TalkManager talM = GameManager.smaM.getAppManager<LineManager>().GetTalkManager(messageData.talkId);
+            TalkManager talM = GameManager.smaM.GetAppManager<LineManager>().GetTalkManager(messageData.talkId);
             if (talM.canReceiveMessage(messageData))
             {
                 try { await UniTask.Delay((int)math.lerp(1000, 3000, (float)math.min(20, messageData.message.Length) / 20), cancellationToken: cts2.Token); }
@@ -36,13 +36,13 @@ public class AddMessageEventData : BaseEventData
                 if (talM.canReceiveMessage(messageData)) 
                 {
                     talM.addMessage(messageData);
-                    GameManager.gamM.addStep();
+                    GameManager.gamM.AddStep();
                 }
             }
         }
     }
 
-    public override BaseEventData deepCopy()
+    public override BaseEventData Copy()
     {
         AddMessageEventData copy = CreateInstance<AddMessageEventData>();
 

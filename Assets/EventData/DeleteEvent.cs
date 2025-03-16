@@ -11,19 +11,19 @@ public class DeleteEvent : BaseEventData
     [Label("削除するイベントID")]
     public int id;
     
-    public override void init()
+    public override void Init()
     {
 
     }
 
-    protected override UniTask doEvent(CancellationToken token)
+    protected override UniTask DoEvent(CancellationToken token)
     {
-        TalkManager talM = GameManager.smaM.getAppManager<LineManager>().GetTalkManager(talkId);
+        TalkManager talM = GameManager.smaM.GetAppManager<LineManager>().GetTalkManager(talkId);
         talM.removeEvent(id);
         return UniTask.CompletedTask;
     }
 
-    public override BaseEventData deepCopy()
+    public override BaseEventData Copy()
     {
         DeleteEvent copy = CreateInstance<DeleteEvent>();
         copy.talkId = talkId;

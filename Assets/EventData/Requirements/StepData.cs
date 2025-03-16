@@ -11,18 +11,18 @@ public class StepData : BaseRequirementData
 
     int initStep = 0;
 
-    public override void init()
+    public override void Init()
     {
-        if (isRelative) initStep = GameManager.gamM.getStep();
+        if (isRelative) initStep = GameManager.gamM.GetStep();
         else initStep = 0;
     }
 
-    public override bool isRequirement()
+    public override bool IsRequirement()
     {
-        return GameManager.gamM.getStep() - initStep >= step;
+        return GameManager.gamM.GetStep() - initStep >= step;
     }
 
-    public override BaseRequirementData deepCopy()
+    public override BaseRequirementData Copy()
     {
         StepData copy = CreateInstance<StepData>();
         copy.step = step;

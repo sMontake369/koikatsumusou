@@ -8,18 +8,18 @@ public class RemoveDeckData : BaseEventData
 {
     public List<int> deckIdList;
 
-    public override void init()
+    public override void Init()
     {
         
     }
 
-    protected override UniTask doEvent(CancellationToken cts)
+    protected override UniTask DoEvent(CancellationToken cts)
     {
-        foreach (var deck in deckIdList) GameManager.decM.removeDeck(deck);
+        foreach (var deck in deckIdList) GameManager.decM.RemoveDeck(deck);
         return UniTask.CompletedTask;
     }
 
-    public override BaseEventData deepCopy()
+    public override BaseEventData Copy()
     {
         RemoveDeckData copy = CreateInstance<RemoveDeckData>();
         copy.deckIdList = deckIdList;

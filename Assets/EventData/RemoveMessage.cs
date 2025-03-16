@@ -11,7 +11,7 @@ public class RemoveMessage : BaseEventData
 
     LineManager linM;
 
-    public override BaseEventData deepCopy()
+    public override BaseEventData Copy()
     {
         RemoveMessage copy = CreateInstance<RemoveMessage>();
         copy.messageDataList = new List<MessageData>();
@@ -19,12 +19,12 @@ public class RemoveMessage : BaseEventData
         return copy;
     }
 
-    public override void init()
+    public override void Init()
     {
-        linM = GameManager.smaM.getAppManager<LineManager>();
+        linM = GameManager.smaM.GetAppManager<LineManager>();
     }
 
-    protected override UniTask doEvent(CancellationToken token)
+    protected override UniTask DoEvent(CancellationToken token)
     {
         TalkManager talkM = linM.GetTalkManager(talkId);
         foreach (MessageData messageData in messageDataList)

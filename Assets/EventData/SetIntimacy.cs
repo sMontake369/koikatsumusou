@@ -13,7 +13,7 @@ public class SetIntimacy : BaseEventData
 
     LineManager linM;
 
-    public override BaseEventData deepCopy()
+    public override BaseEventData Copy()
     {
         SetIntimacy copy = CreateInstance<SetIntimacy>();
         copy.friendId = friendId;
@@ -21,14 +21,14 @@ public class SetIntimacy : BaseEventData
         return copy;
     }
 
-    public override void init()
+    public override void Init()
     {
-        linM = GameManager.smaM.getAppManager<LineManager>();
+        linM = GameManager.smaM.GetAppManager<LineManager>();
     }
 
-    protected override UniTask doEvent(CancellationToken token)
+    protected override UniTask DoEvent(CancellationToken token)
     {
-        linM.setFriendIntimacy(friendId, addIntimacy);
+        linM.SetFriendIntimacy(friendId, addIntimacy);
         return UniTask.CompletedTask;
     }
 }

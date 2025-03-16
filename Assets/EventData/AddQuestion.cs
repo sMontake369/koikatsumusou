@@ -7,22 +7,22 @@ public class AddQuestion : BaseEventData
 {
     public int talkId;
     public ReplyData questionData;
-    public override void init()
+    public override void Init()
     {
-        questionData.init();
+        questionData.Init();
     }
 
-    protected override UniTask doEvent(CancellationToken token)
+    protected override UniTask DoEvent(CancellationToken token)
     {
-        GameManager.smaM.getAppManager<LineManager>().GetTalkManager(talkId).addQuestion(questionData);
+        GameManager.smaM.GetAppManager<LineManager>().GetTalkManager(talkId).addQuestion(questionData);
         return UniTask.CompletedTask;
     }
 
-    public override BaseEventData deepCopy()
+    public override BaseEventData Copy()
     {
         AddQuestion addQuestion = CreateInstance<AddQuestion>();
         addQuestion.talkId = talkId;
-        addQuestion.questionData = questionData.deepCopy();
+        addQuestion.questionData = questionData.Copy();
         return addQuestion;
     }
 }

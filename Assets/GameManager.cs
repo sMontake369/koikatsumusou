@@ -74,6 +74,7 @@ public class GameManager : MonoBehaviour
 
     public void StartGame(int stageId)
     {
+        isGameEnd = false;
         currentStageId = stageId;
         StageData stageData = stageDataList[currentStageId].Copy();
 
@@ -83,7 +84,6 @@ public class GameManager : MonoBehaviour
         solM.StartGame();
         audM.SetBGM(EBGM.Game);
         
-        isGameEnd = false;
         titleWindow.enabled = false;
 
         if (isTutorial) 
